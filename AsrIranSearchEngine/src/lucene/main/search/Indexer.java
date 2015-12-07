@@ -104,7 +104,7 @@ public class Indexer {
                     if (i == 5) {
                         row.getCell(i).setCellType(Cell.CELL_TYPE_NUMERIC);
                         Date javaDate= DateUtil.getJavaDate(row.getCell(i).getNumericCellValue());
-                        simpleDateFormat = new SimpleDateFormat("MM/dd/yy").format(javaDate);
+                        simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy").format(javaDate);
                         dateDetails = simpleDateFormat.split("/");
                         year = Integer.parseInt(dateDetails[2]);
                         month = Integer.parseInt(dateDetails[0]);
